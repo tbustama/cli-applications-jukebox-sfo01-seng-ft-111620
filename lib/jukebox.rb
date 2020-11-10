@@ -28,7 +28,7 @@ def play(songs)
   songs.each_with_index do |song, idx|
     if input.to_i == (idx + 1) || song == input
       puts "Playing #{song}"
-      return "Playing #{song}"
+      return
     end
   end
   puts "Invalid input, please try again"
